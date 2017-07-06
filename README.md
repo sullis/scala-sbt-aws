@@ -1,6 +1,6 @@
 # Scala, sbt and AWS CLI Dockerfile
 
-[![Docker Build Statu](https://img.shields.io/docker/build/toolsplus/scala-sbt-aws.svg)]()
+[![Docker Build Status](https://img.shields.io/docker/build/toolsplus/scala-sbt-aws.svg)]()
 
 This repository contains **Dockerfile** based on [scala-sbt](https://github.com/hseeberger/scala-sbt)
 adding the AWS CLI.
