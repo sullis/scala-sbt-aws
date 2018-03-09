@@ -1,5 +1,11 @@
 FROM hseeberger/scala-sbt
 
+# Install Atlassian Plugin SDK
+ARG  SDK_VERSION=6.3.10
+
+RUN curl https://packages.atlassian.com/list/atlassian-sdk-deb/deb-archive/atlassian-plugin-sdk_${SDK_VERSION}_all.deb -O
+RUN dpkg -i ./atlassian-plugin-sdk_${SDK_VERSION}_all.deb
+
 # Install AWS CLI
 RUN apt-get update -q
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -qy python-pip
